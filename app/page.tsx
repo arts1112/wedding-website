@@ -1,10 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import {
-  Heart,
   Calendar,
   MapPin,
   Gift,
@@ -21,7 +19,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Badge } from "@/components/ui/badge";
 
 // Reusable Section component
 const Section = ({
@@ -90,7 +87,7 @@ export default function Home() {
               Like a sunflower always turning to the sun, our love has bloomed
               brighter each day. From laughter-filled moments to quiet
               adventures, our journey has been nothing short of magical. Now,
-              we're ready to start the next chapter together.
+              we&apos;re ready to start the next chapter together.
             </p>
           </CardContent>
         </Card>
