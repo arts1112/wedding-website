@@ -60,7 +60,7 @@ export default function Home() {
           className="z-10"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-yellow-900 mb-6">
-            Roxanne & Arman
+            Roxanne &amp; Arman
           </h1>
           <p className="text-xl md:text-2xl text-yellow-700 mb-8">
             Join us in celebrating our love
@@ -154,7 +154,7 @@ export default function Home() {
             <Instagram className="w-6 h-6" />
           </a>
         </div>
-        <p>© 2026 Roxanne & Arman — #RoxAndRollForever</p>
+        <p>© 2026 Roxanne &amp; Arman — #RoxAndRollForever</p>
       </footer>
     </main>
   );
