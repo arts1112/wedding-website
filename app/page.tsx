@@ -101,7 +101,7 @@ export default function Home() {
               <CardTitle className="text-center">Date</CardTitle>
             </CardHeader>
             <CardContent className="text-center text-gray-700">
-              March 15, 2026
+              March 27, 2026
             </CardContent>
           </Card>
 
@@ -111,7 +111,7 @@ export default function Home() {
               <CardTitle className="text-center">Venue</CardTitle>
             </CardHeader>
             <CardContent className="text-center text-gray-700">
-              The Sunflower Garden, Cavite
+              Zion Events place, San Pedro, Laguna
             </CardContent>
           </Card>
 
@@ -147,7 +147,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-yellow-100 py-6 text-center text-yellow-700">
         <div className="flex justify-center space-x-6 mb-4">
-          <a href="mailto:roxanneandarman@email.com">
+          <a href="mailto:lexiwaps@gmail.com">
             <Mail className="w-6 h-6" />
           </a>
           <a href="https://instagram.com/roxanneandarman">
