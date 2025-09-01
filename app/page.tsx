@@ -85,6 +85,7 @@ export default function Home() {
       <Section id="story" title="Our Story">
         <Card className="bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl">
           <CardContent className="p-6 text-center">
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <p className="text-lg text-gray-700">
               Like a sunflower always turning to the sun, our love has bloomed
               brighter each day. From laughter-filled moments to quiet
