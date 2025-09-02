@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Calendar,
   MapPin,
@@ -53,28 +54,43 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-yellow-50">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-yellow-100 to-yellow-200">
+      <section className="relative h-screen flex items-center justify-center text-center">
+        {/* Background Image */}
+        <Image
+          src="/couple.jpg" // put your image in /public folder
+          alt="Bride and Groom"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Text Content */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="z-10"
+          className="z-10 relative"
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-yellow-900 mb-6">
-            Roxanne &amp; Arman
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+            Arman &amp; Roxanne
           </h1>
-          <p className="text-xl md:text-2xl text-yellow-700 mb-8">
+          <p className="text-xl md:text-2xl text-yellow-100 mb-8">
             Join us in celebrating our love
           </p>
           <Button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-2xl">
             Save the Date
           </Button>
         </motion.div>
+
+        {/* Bouncing Arrow */}
         <motion.div
           className="absolute bottom-10 animate-bounce"
           animate={{ y: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
         >
-          <ChevronDown className="w-8 h-8 text-yellow-700" />
+          <ChevronDown className="w-8 h-8 text-white" />
         </motion.div>
       </section>
 
